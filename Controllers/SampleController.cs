@@ -22,8 +22,7 @@ namespace MontApi.Controllers
         [Route("api/test")]
         public List<crteapi> Getall()
         {
-            List<crteapi> lst = db.crteapis.ToList();
-            return lst;
+            return db.crteapis.ToList();
         }
 
         [HttpGet]
